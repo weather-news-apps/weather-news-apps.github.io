@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Local News — Transparency & Support Center</title>
+    <title>Weather News — Transparency & Support Center</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
@@ -38,8 +38,8 @@
     <nav class="glass-nav sticky top-0 z-50 border-b border-slate-200">
         <div class="max-w-6xl mx-auto px-6 h-20 flex justify-between items-center">
             <div class="flex items-center space-x-3">
-                <img src="https://collageresource.thinkyeah.com/local_news/logo.png" alt="Local News Logo" class="w-10 h-10 rounded-xl shadow-lg">
-                <span class="font-extrabold text-2xl tracking-tighter text-slate-900">Local News</span>
+                <img src="images/app_icon.png" alt="Weather News Logo" class="w-10 h-10 rounded-xl shadow-lg">
+                <span class="font-extrabold text-2xl tracking-tighter text-slate-900">Weather News</span>
             </div>
 
             <div class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-600">
@@ -47,27 +47,67 @@
                 <a href="#compliance" class="hover:text-blue-600 transition-colors">Transparency</a>
                 <a href="#showcase" class="hover:text-blue-600 transition-colors">Product</a>
                 <a href="#contact" class="hover:text-blue-600 transition-colors">Contact</a>
-                <a href="https://play.google.com/store/apps/details?id=news.local.voice.live.weather.daily.forecast" target="_blank" class="bg-slate-900 text-white px-6 py-2.5 rounded-full hover:bg-blue-600 transition-all shadow-md active:scale-95">Download</a>
+                <a href="https://play.google.com/store/apps/details?id=local.weather.news.daily.forecast.radar" target="_blank" class="bg-slate-900 text-white px-6 py-2.5 rounded-full hover:bg-blue-600 transition-all shadow-md active:scale-95">Download</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <header id="home" class="relative overflow-hidden bg-white border-b border-slate-100 bg-dot-pattern">
-        <div class="max-w-6xl mx-auto px-6 pt-24 pb-20 relative z-10 text-center">
-            <div class="inline-flex items-center px-4 py-1.5 rounded-full text-sm font-bold bg-blue-50 text-blue-700 border border-blue-100 mb-8">
-                Transparency & Information Center
-            </div>
-            <h1 class="text-6xl md:text-8xl font-extrabold text-slate-900 tracking-tight mb-8 leading-none">
-                Stay Informed, <br/><span class="text-blue-600">Stay Local.</span>
-            </h1>
-            <p class="text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed mb-12">
-                Providing specialized access to verified global and local information through our algorithmic aggregation service.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
-                <a href="https://play.google.com/store/apps/details?id=news.local.voice.live.weather.daily.forecast" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" class="h-16 hover:opacity-85 transition-opacity">
-                </a>
+        <div class="max-w-6xl mx-auto px-6 pt-20 pb-20 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-[minmax(0,1.2fr)_minmax(320px,0.8fr)] gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <div class="inline-flex items-center px-4 py-1.5 rounded-full text-sm font-bold bg-blue-50 text-blue-700 border border-blue-100 mb-8">
+                        Weather & Information Center
+                    </div>
+                    <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 tracking-tight mb-8 leading-[0.95]">
+                        Forecasts That Matter, <br/><span class="text-blue-600">Updates That Help.</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-slate-500 max-w-2xl leading-relaxed mb-10 mx-auto lg:mx-0">
+                        Weather News combines local weather forecasts, radar conditions, severe weather alerts, and timely news updates in one clear, easy-to-read experience.
+                    </p>
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-3 mb-10 text-sm font-semibold text-slate-600">
+                        <span class="px-4 py-2 rounded-full bg-white border border-slate-200 shadow-sm">Local Forecasts</span>
+                        <span class="px-4 py-2 rounded-full bg-white border border-slate-200 shadow-sm">Radar Tracking</span>
+                        <span class="px-4 py-2 rounded-full bg-white border border-slate-200 shadow-sm">Weather Alerts</span>
+                        <span class="px-4 py-2 rounded-full bg-white border border-slate-200 shadow-sm">News Updates</span>
+                    </div>
+                    <div class="flex justify-center lg:justify-start">
+                        <a href="https://play.google.com/store/apps/details?id=local.weather.news.daily.forecast.radar" target="_blank">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" class="h-16 hover:opacity-85 transition-opacity">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="absolute -top-10 -right-6 w-40 h-40 bg-blue-100 rounded-full blur-3xl opacity-70"></div>
+                    <div class="relative bg-white/90 backdrop-blur-xl border border-slate-200 rounded-[2rem] shadow-2xl p-6 md:p-8">
+                        <div class="flex items-start justify-between mb-6">
+                            <div>
+                                <p class="text-sm font-black uppercase tracking-widest text-blue-600">Daily Snapshot</p>
+                                <h2 class="text-2xl font-extrabold text-slate-900 mt-2">Weather First</h2>
+                            </div>
+                            <span class="px-3 py-1 rounded-full bg-amber-100 text-amber-700 text-xs font-black uppercase tracking-widest">Live</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4 mb-5">
+                            <div class="rounded-2xl bg-slate-50 border border-slate-200 p-4">
+                                <p class="text-[11px] uppercase tracking-widest text-slate-400 font-black mb-2">Forecast</p>
+                                <p class="text-3xl font-black text-slate-900">72°</p>
+                                <p class="text-sm text-slate-500 mt-1">Hourly and daily outlook</p>
+                            </div>
+                            <div class="rounded-2xl bg-blue-50 border border-blue-100 p-4">
+                                <p class="text-[11px] uppercase tracking-widest text-blue-400 font-black mb-2">Radar</p>
+                                <p class="text-3xl font-black text-blue-700">Rain</p>
+                                <p class="text-sm text-blue-600/80 mt-1">Track nearby conditions</p>
+                            </div>
+                        </div>
+                        <div class="rounded-2xl bg-slate-900 text-white p-5">
+                            <p class="text-[11px] uppercase tracking-widest text-blue-200 font-black mb-2">Information Feed</p>
+                            <p class="text-lg font-bold mb-2">Timely local updates alongside weather signals.</p>
+                            <p class="text-sm text-slate-300">One destination for daily planning, weather awareness, and essential updates.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -127,7 +167,7 @@
                         Service Disclosure
                     </h3>
                     <div class="text-amber-900/80 space-y-4 leading-relaxed">
-                        <p>Local News is an information aggregation service operated by <strong>Daowei Network</strong>. We connect to and aggregate publicly available data via third-party APIs.</p>
+                        <p>Weather News is an information aggregation service operated by <strong>Doomob Labs</strong>. We connect to and aggregate publicly available data via third-party APIs.</p>
                         <p>We do not claim ownership of original articles; all copyrights remain with their respective publishers. <strong>Every article clearly displays its original publisher and source link.</strong></p>
                         <p class="text-sm font-semibold border-t border-amber-200 pt-4 italic text-amber-900">Source attribution and publication time are verified for every piece of content.</p>
                     </div>
@@ -139,15 +179,11 @@
                     <div class="space-y-6 text-sm">
                         <div class="flex flex-col">
                             <span class="text-slate-400 uppercase text-[10px] font-black tracking-widest mb-1">Developer</span>
-                            <span class="font-bold">Daowei Network</span>
-                        </div>
-                        <div class="flex flex-col">
-                            <span class="text-slate-400 uppercase text-[10px] font-black tracking-widest mb-1">HQ Location</span>
-                            <span class="font-bold">Singapore</span>
+                            <span class="font-bold">Doomob Labs</span>
                         </div>
                         <div class="flex flex-col">
                             <span class="text-slate-400 uppercase text-[10px] font-black tracking-widest mb-1">Compliance Desk</span>
-                            <span class="font-bold text-blue-600 italic">support@daoweisg.com</span>
+                            <span class="font-bold text-blue-600 italic">support@doovicapps.com</span>
                         </div>
                     </div>
                 </div>
@@ -184,19 +220,17 @@
                     <div class="flex flex-wrap justify-center lg:justify-start gap-8">
                         <div>
                             <span class="text-[10px] font-black uppercase tracking-widest text-blue-200 mb-1 block">Compliance Email</span>
-                            <p class="font-bold text-xl">support@daoweisg.com</p>
+                            <p class="font-bold text-xl">support@doovicapps.com</p>
                         </div>
                         <div>
                             <span class="text-[10px] font-black uppercase tracking-widest text-blue-200 mb-1 block">Partnership</span>
-                            <p class="font-bold text-xl">biz@daoweisg.com</p>
+                            <p class="font-bold text-xl">biz@doovicapps.com</p>
                         </div>
                     </div>
                 </div>
                 <div class="bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-white/20 text-center min-w-[300px]">
-                    <p class="text-[10px] font-black uppercase tracking-widest text-blue-100 mb-4">Operations Center</p>
-                    <p class="text-3xl font-black mb-8 tracking-tighter text-white">Singapore</p>
                     <!-- Fixed: Direct mailto link on the button -->
-                    <a href="mailto:support@daoweisg.com" class="inline-block w-full bg-white text-blue-600 font-black py-4 rounded-2xl shadow-xl hover:bg-blue-50 transition-all active:scale-95">Submit Feedback</a>
+                    <a href="mailto:support@doovicapps.com" class="inline-block w-full bg-white text-blue-600 font-black py-4 rounded-2xl shadow-xl hover:bg-blue-50 transition-all active:scale-95">Submit Feedback</a>
                 </div>
             </div>
         </div>
@@ -208,10 +242,10 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16 text-center md:text-left">
                 <div class="md:col-span-1">
                     <div class="flex items-center space-x-2 mb-6 justify-center md:justify-start">
-                        <img src="https://collageresource.thinkyeah.com/local_news/logo.png" alt="Logo" class="w-8 h-8 rounded-lg">
-                        <span class="font-bold text-xl tracking-tighter">Local News</span>
+                        <img src="images/app_icon.png" alt="Logo" class="w-8 h-8 rounded-lg">
+                        <span class="font-bold text-xl tracking-tighter">Weather News</span>
                     </div>
-                    <p class="text-sm text-slate-400 leading-relaxed italic">Transparency-first information access. Powered by Daowei Network.</p>
+                    <p class="text-sm text-slate-400 leading-relaxed italic">Transparency-first information access. Powered by Doomob Labs.</p>
                 </div>
                 
                 <div class="space-y-4">
@@ -234,15 +268,14 @@
                 <div class="space-y-4">
                     <h4 class="text-sm font-black uppercase tracking-widest text-slate-900 tracking-tight">Base</h4>
                     <nav class="flex flex-col space-y-2 text-sm text-slate-500 font-bold italic">
-                        <p>Singapore HQ</p>
-                        <p>support@daoweisg.com</p>
+                        <p>support@doovicapps.com</p>
                         <p class="text-[10px] text-slate-300 uppercase tracking-tighter mt-4">Version: Feb 2026</p>
                     </nav>
                 </div>
             </div>
 
             <div class="pt-8 border-t border-slate-100 text-center text-[10px] text-slate-400 font-black uppercase tracking-widest">
-                <p>© 2020-2026 Daowei Network (Singapore). All Rights Reserved.</p>
+                <p>© 2020-2026 Doomob Labs. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
