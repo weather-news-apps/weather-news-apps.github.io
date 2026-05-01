@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local News — Transparency & Support Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+        .bg-dot-pattern {
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .app-screenshot {
+            filter: drop-shadow(0 30px 40px rgb(0 0 0 / 0.12));
+            transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .app-screenshot:hover {
+            transform: scale(1.02) translateY(-10px);
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col">
+
+    <!-- Navigation -->
+    <nav class="glass-nav sticky top-0 z-50 border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="https://collageresource.thinkyeah.com/local_news/logo.png" alt="Local News Logo" class="w-10 h-10 rounded-xl shadow-lg">
+                <span class="font-extrabold text-2xl tracking-tighter text-slate-900">Local News</span>
+            </div>
+
+            <div class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-600">
+                <a href="#home" class="hover:text-blue-600 transition-colors">Home</a>
+                <a href="#compliance" class="hover:text-blue-600 transition-colors">Transparency</a>
+                <a href="#showcase" class="hover:text-blue-600 transition-colors">Product</a>
+                <a href="#contact" class="hover:text-blue-600 transition-colors">Contact</a>
+                <a href="https://play.google.com/store/apps/details?id=news.local.voice.live.weather.daily.forecast" target="_blank" class="bg-slate-900 text-white px-6 py-2.5 rounded-full hover:bg-blue-600 transition-all shadow-md active:scale-95">Download</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="relative overflow-hidden bg-white border-b border-slate-100 bg-dot-pattern">
+        <div class="max-w-6xl mx-auto px-6 pt-24 pb-20 relative z-10 text-center">
+            <div class="inline-flex items-center px-4 py-1.5 rounded-full text-sm font-bold bg-blue-50 text-blue-700 border border-blue-100 mb-8">
+                Transparency & Information Center
+            </div>
+            <h1 class="text-6xl md:text-8xl font-extrabold text-slate-900 tracking-tight mb-8 leading-none">
+                Stay Informed, <br/><span class="text-blue-600">Stay Local.</span>
+            </h1>
+            <p class="text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed mb-12">
+                Providing specialized access to verified global and local information through our algorithmic aggregation service.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="https://play.google.com/store/apps/details?id=news.local.voice.live.weather.daily.forecast" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" class="h-16 hover:opacity-85 transition-opacity">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Showcase -->
+    <section id="showcase" class="py-32 bg-white">
+        <div class="max-w-6xl mx-auto px-6 space-y-40">
+            <!-- Feature 1 -->
+            <div class="flex flex-col md:flex-row items-center gap-16 md:gap-32">
+                <div class="flex-1 space-y-6">
+                    <span class="text-blue-600 font-black uppercase tracking-widest text-sm">Information Retrieval</span>
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">Curated Data Stream</h2>
+                    <p class="text-lg text-slate-500 leading-relaxed">Our service utilizes advanced APIs to organize headlines from over 100+ trusted global publishers, ensuring users discover the original reporting within its proper context.</p>
+                </div>
+                <div class="flex-1 flex justify-center">
+                    <img src="https://collageresource.thinkyeah.com/local_news/71.png" alt="News Feed" class="app-screenshot w-64 md:w-80 rounded-[3rem] border-[10px] border-slate-900 shadow-2xl">
+                </div>
+            </div>
+            <!-- Feature 2 -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-16 md:gap-32">
+                <div class="flex-1 space-y-6">
+                    <span class="text-purple-600 font-black uppercase tracking-widest text-sm">Personalization</span>
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">Tailored Categories</h2>
+                    <p class="text-lg text-slate-500 leading-relaxed">Choose the categories that interest you most. Our smart algorithms filter information through API connectivity to build a personalized content mix.</p>
+                </div>
+                <div class="flex-1 flex justify-center">
+                    <img src="https://collageresource.thinkyeah.com/local_news/76.png" alt="Topics" class="app-screenshot w-64 md:w-80 rounded-[2.5rem] border-[10px] border-slate-900 shadow-2xl">
+                </div>
+            </div>
+            <!-- Feature 3 -->
+            <div class="flex flex-col md:flex-row items-center gap-16 md:gap-32">
+                <div class="flex-1 space-y-6">
+                    <span class="text-amber-600 font-black uppercase tracking-widest text-sm">Utility Service</span>
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">Local Information Alerts</h2>
+                    <p class="text-lg text-slate-500 leading-relaxed">Access aggregated emergency data and real-time weather forecasts integrated seamlessly with your daily information flow.</p>
+                </div>
+                <div class="flex-1 flex justify-center">
+                    <img src="https://collageresource.thinkyeah.com/local_news/73.png" alt="Weather" class="app-screenshot w-64 md:w-80 rounded-[2.5rem] border-[10px] border-slate-900 shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transparency Center -->
+    <section id="compliance" class="py-24 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Transparency Hub</h2>
+                <p class="text-slate-500 mt-2 italic text-sm">Essential disclosures regarding our information aggregation model.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Disclosure -->
+                <div class="lg:col-span-2 bg-amber-50 border border-amber-200 rounded-3xl p-10 shadow-sm">
+                    <h3 class="text-xl font-bold mb-4 flex items-center text-amber-900">
+                        <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+                        Service Disclosure
+                    </h3>
+                    <div class="text-amber-900/80 space-y-4 leading-relaxed">
+                        <p>Local News is an information aggregation service operated by <strong>Daowei Network</strong>. We connect to and aggregate publicly available data via third-party APIs.</p>
+                        <p>We do not claim ownership of original articles; all copyrights remain with their respective publishers. <strong>Every article clearly displays its original publisher and source link.</strong></p>
+                        <p class="text-sm font-semibold border-t border-amber-200 pt-4 italic text-amber-900">Source attribution and publication time are verified for every piece of content.</p>
+                    </div>
+                </div>
+
+                <!-- Operator Info -->
+                <div class="bg-white border border-slate-200 rounded-3xl p-10 shadow-sm">
+                    <h3 class="text-xl font-bold mb-6 text-slate-900 tracking-tight">Support Information</h3>
+                    <div class="space-y-6 text-sm">
+                        <div class="flex flex-col">
+                            <span class="text-slate-400 uppercase text-[10px] font-black tracking-widest mb-1">Developer</span>
+                            <span class="font-bold">Daowei Network</span>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-slate-400 uppercase text-[10px] font-black tracking-widest mb-1">HQ Location</span>
+                            <span class="font-bold">Singapore</span>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-slate-400 uppercase text-[10px] font-black tracking-widest mb-1">Compliance Desk</span>
+                            <span class="font-bold text-blue-600 italic">support@daoweisg.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Freshness Policy Block -->
+                <div id="freshness" class="lg:col-span-3 bg-slate-100 border border-slate-200 rounded-3xl p-10">
+                    <h3 class="text-xl font-bold mb-6 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Information Freshness Policy
+                    </h3>
+                    <p class="text-slate-600 mb-6 leading-relaxed">To ensure users receive current information, we refresh our content cache frequently through automated API cycles. We organize data from over 100+ global leaders including:</p>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-white px-5 py-2.5 rounded-xl border border-slate-200 text-xs font-black text-slate-700">Associated Press</span>
+                        <span class="bg-white px-5 py-2.5 rounded-xl border border-slate-200 text-xs font-black text-slate-700">Reuters</span>
+                        <span class="bg-white px-5 py-2.5 rounded-xl border border-slate-200 text-xs font-black text-slate-700">CNN</span>
+                        <span class="bg-white px-5 py-2.5 rounded-xl border border-slate-200 text-xs font-black text-slate-700">BBC News</span>
+                        <span class="bg-white px-5 py-2.5 rounded-xl border border-blue-200 text-xs font-black text-blue-600 shadow-sm bg-blue-50/50">And 100+ trusted sources...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Appeals Section -->
+    <section id="contact" class="max-w-6xl mx-auto px-6 mb-24 relative z-20">
+        <div id="appeals" class="bg-gradient-to-br from-blue-700 to-blue-500 rounded-[3.5rem] p-12 md:p-16 text-white shadow-2xl relative overflow-hidden group">
+            <!-- Added pointer-events-none to prevent blocking clicks -->
+            <div class="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 bg-white/10 rounded-full blur-3xl group-hover:bg-white/20 transition-all duration-500 pointer-events-none"></div>
+            
+            <div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12">
+                <div class="max-w-xl text-center lg:text-left">
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight">Information Integrity & Support</h2>
+                    <p class="text-blue-50 text-lg mb-8 opacity-90 leading-relaxed">We respect all content owners. For feedback or requests to adjust content aggregation parameters, please use our dedicated desk.</p>
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-8">
+                        <div>
+                            <span class="text-[10px] font-black uppercase tracking-widest text-blue-200 mb-1 block">Compliance Email</span>
+                            <p class="font-bold text-xl">support@daoweisg.com</p>
+                        </div>
+                        <div>
+                            <span class="text-[10px] font-black uppercase tracking-widest text-blue-200 mb-1 block">Partnership</span>
+                            <p class="font-bold text-xl">biz@daoweisg.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-white/20 text-center min-w-[300px]">
+                    <p class="text-[10px] font-black uppercase tracking-widest text-blue-100 mb-4">Operations Center</p>
+                    <p class="text-3xl font-black mb-8 tracking-tighter text-white">Singapore</p>
+                    <!-- Fixed: Direct mailto link on the button -->
+                    <a href="mailto:support@daoweisg.com" class="inline-block w-full bg-white text-blue-600 font-black py-4 rounded-2xl shadow-xl hover:bg-blue-50 transition-all active:scale-95">Submit Feedback</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 pt-20 pb-12 mt-auto">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16 text-center md:text-left">
+                <div class="md:col-span-1">
+                    <div class="flex items-center space-x-2 mb-6 justify-center md:justify-start">
+                        <img src="https://collageresource.thinkyeah.com/local_news/logo.png" alt="Logo" class="w-8 h-8 rounded-lg">
+                        <span class="font-bold text-xl tracking-tighter">Local News</span>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed italic">Transparency-first information access. Powered by Daowei Network.</p>
+                </div>
+                
+                <div class="space-y-4">
+                    <h4 class="text-sm font-black uppercase tracking-widest text-slate-900">Legal</h4>
+                    <nav class="flex flex-col space-y-2 text-sm text-slate-500">
+                        <a href="/privacy_policy" target="_blank" class="hover:text-blue-600">Privacy Policy</a>
+                        <a href="/terms_of_service" target="_blank" class="hover:text-blue-600">Terms of Service</a>
+                    </nav>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="text-sm font-black uppercase tracking-widest text-slate-900 underline decoration-blue-600 underline-offset-8 text-blue-600">Trust Center</h4>
+                    <nav class="flex flex-col space-y-2 text-sm text-slate-500">
+                        <a href="#compliance" class="hover:text-blue-600 transition-colors">Compliance Desk</a>
+                        <a href="#freshness" class="hover:text-blue-600 transition-colors">Information Policy</a>
+                        <a href="#appeals" class="hover:text-blue-600 transition-colors">Content Feedback</a>
+                    </nav>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="text-sm font-black uppercase tracking-widest text-slate-900 tracking-tight">Base</h4>
+                    <nav class="flex flex-col space-y-2 text-sm text-slate-500 font-bold italic">
+                        <p>Singapore HQ</p>
+                        <p>support@daoweisg.com</p>
+                        <p class="text-[10px] text-slate-300 uppercase tracking-tighter mt-4">Version: Feb 2026</p>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-slate-100 text-center text-[10px] text-slate-400 font-black uppercase tracking-widest">
+                <p>© 2020-2026 Daowei Network (Singapore). All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
